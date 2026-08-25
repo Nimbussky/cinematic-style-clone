@@ -1,25 +1,52 @@
 # Cinematic Style Clone
 
-Cinematic style clone of the **Organic Garlic Premium** e-commerce platform.
+Cinematic / immersive version of **Organic Garlic Premium** — premium organic garlic e-commerce with motion-first homepage and scroll-driven storytelling.
 
-This repository is prepared for a cinematic / immersive scroll-driven experience version of the original Organic Garlic Premium site (https://github.com/Nimbussky/organic-garlic-premium).
+**Live base:** https://github.com/Nimbussky/organic-garlic-premium  
+**This repo:** cinematic framework + runnable Next.js app
 
-## Original Project
+## Tech stack
 
-- Full Next.js 16 + TypeScript + Tailwind + Three.js + Framer Motion + Supabase + Razorpay store
-- 3D garlic hero, product catalog, cart, checkout, admin panel
+- **Next.js 16** (App Router) + TypeScript
+- **Tailwind CSS 4**
+- **Framer Motion** (cinematic section reveals)
+- **Three.js / R3F** (ready for 3D hero)
+- **Lenis-ready** smooth scroll
+- Cart context, product catalog, story pages
 
-## Planned Direction
+## Quick start
 
-- Convert key sections into scroll-scrubbed cinematic fly-throughs
-- Immersive product storytelling
-- High-end motion design
+```bash
+npm install
+npm run dev
+```
 
-## How to use
+Open http://localhost:3000
 
-1. Clone this repo or the original `organic-garlic-premium`
-2. Copy the full source from the original if needed
-3. Apply cinematic enhancements
+## What's included
+
+- Cinematic homepage (hero + motion sections)
+- Product catalog + product detail
+- Cart drawer
+- Story & About pages
+- Header / Footer
+- Static product data (works without Supabase)
+
+## Optional env
+
+Copy `.env.example` → `.env.local` for Supabase / Razorpay when ready.
+
+## Deploy
+
+- **Vercel**: Import this repo → Framework Next.js → Deploy
+- Turn off Deployment Protection if you see 403
+
+## Cinematic roadmap (lets-scroll style)
+
+1. Scroll-scrubbed farm → process → product journey
+2. Continuous camera flight between scenes
+3. 3D / diorama or photoreal art direction
+4. Connector clips between story beats
 
 ---
-Created via Grok for Nimbussky
+Built with Grok · Aakash OS + lets-scroll patterns
