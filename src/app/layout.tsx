@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { CartProvider } from "@/store/cart"
 import { Header } from "@/components/layout/Header"
 import { Footer } from "@/components/layout/Footer"
+import { CartDrawer } from "@/components/cart/CartDrawer"
 import { SmoothScrolling } from "@/components/ui/SmoothScrolling"
 import "./globals.css"
 
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <SmoothScrolling>
           <CartProvider>
             <Header />
+            <CartDrawer />
             <main>{children}</main>
             <Footer />
           </CartProvider>
